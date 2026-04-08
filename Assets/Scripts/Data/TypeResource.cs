@@ -1,4 +1,4 @@
-namespace Game
+namespace Data
 {
     public enum TypeResource
     {
