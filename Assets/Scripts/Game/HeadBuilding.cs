@@ -1,15 +1,21 @@
+using System.Collections.Generic;
 using Abstracts;
-using Data;
-using Zenject;
 
 namespace Game
 {
     public class HeadBuilding : BuildingAbstract
     {
-        [Inject]
-        protected override void Construct(ResourceManager resourceManager)
+        private List<ResourceBuildingAbstract>  _resourceBuildings = new List<ResourceBuildingAbstract>();
+        // [Inject]
+        // protected override void Construct(ResourceManager resourceManager)
+        // {
+        //     base.Construct(resourceManager);
+        // }
+
+
+        public void AddResourceBuilding(ResourceBuildingAbstract resourceBuilding)
         {
-            base.Construct(resourceManager);
+            _resourceBuildings.Add(resourceBuilding);
         }
     }
 }

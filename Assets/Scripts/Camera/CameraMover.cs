@@ -5,14 +5,13 @@ namespace Camera
 {
     public class CameraMover : MonoBehaviour
     {
-        public float dragSpeed = 0.1f; // Чувствительность перетаскивания
+        public float dragSpeed = 0.1f;
         private bool _isDragging;
         private Vector2 _mouseDelta;
-
-        // Методы для связи с Input Action (через PlayerInput или напрямую)
+        
         public void OnDragClick(InputAction.CallbackContext context)
         {
-            _isDragging = context.started;
+            _isDragging = context.started || context.performed;
         }
 
         public void OnMouseDelta(InputAction.CallbackContext context)

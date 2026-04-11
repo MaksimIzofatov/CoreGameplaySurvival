@@ -1,13 +1,17 @@
-using System;
 using System.Collections.Generic;
 
 namespace Data
 {
     public class ResourceManager
     {
-        public List<GlobalResourceData> GlobalResources = new();
+        private List<Resource> _globalResources;
+        
+        public IEnumerable<Resource> GlobalResources => _globalResources;
 
-
+        public ResourceManager()
+        {
+            _globalResources = new List<Resource>();
+        }
 
     }
 }
