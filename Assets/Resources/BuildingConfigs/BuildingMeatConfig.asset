@@ -12,5 +12,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6638c32f11bc43d2b999502eee19c959, type: 3}
   m_Name: BuildingMeatConfig
   m_EditorClassIdentifier: 
-  _name: Resource
-  _prefab: {fileID: -7173620863456406799, guid: a493dfeafe21b5f42887d83510377f26, type: 3}
+  _headBuildingLevel: 2
+  _prefab: {fileID: 80794780971117636, guid: a493dfeafe21b5f42887d83510377f26, type: 3}

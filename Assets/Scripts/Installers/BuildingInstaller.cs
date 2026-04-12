@@ -15,6 +15,7 @@ namespace installers
         private void Bind()
         {
             Container.Bind<ResourceManager>().AsSingle();
+            Container.BindInterfacesTo<LevelFactory>().AsSingle();
             Container.BindInterfacesTo<BuildingFactory>().AsSingle();
         }
         

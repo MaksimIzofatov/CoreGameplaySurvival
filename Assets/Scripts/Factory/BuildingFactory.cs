@@ -1,6 +1,7 @@
 using System.IO;
 using Abstracts;
 using Game;
+using Interfaces;
 using ScriptableObjects;
 using UnityEngine;
 using Zenject;
@@ -36,9 +37,15 @@ namespace Factory
             
         public ResourceBuildingAbstract GetResourceBuildingAbstract()
         {
+            if (_resourceBuildConfigs[_currentResourceBuilding].HeadBuildingLevel >
+                HeadBuilding.CurrentLevel.CurrentLevel)
+            {
+                return null;
+            }
             
             var resourceBuilding = _container.InstantiatePrefabForComponent<ResourceBuildingAbstract>(_resourceBuildConfigs[_currentResourceBuilding++].Prefab);
             HeadBuilding.AddResourceBuilding(resourceBuilding);
+            resourceBuilding.SetHeadBuilding(HeadBuilding);
             IsLastBuilding = _currentResourceBuilding == _resourceBuildConfigs.Length;
             return resourceBuilding;
         }

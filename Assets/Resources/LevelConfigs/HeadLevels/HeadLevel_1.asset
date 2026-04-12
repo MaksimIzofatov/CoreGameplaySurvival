@@ -9,8 +9,9 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6638c32f11bc43d2b999502eee19c959, type: 3}
-  m_Name: BuildingWoodConfig
+  m_Script: {fileID: 11500000, guid: 333e758b2e0d46b18c7b15ea3fce2aff, type: 3}
+  m_Name: HeadLevel_1
   m_EditorClassIdentifier: 
-  _headBuildingLevel: 3
-  _prefab: {fileID: 1395139840266166457, guid: a984cdc0eecb0264a8071253cd2987bc, type: 3}
+  _level: 1
+  _typeResources: 
+  _countResources: []

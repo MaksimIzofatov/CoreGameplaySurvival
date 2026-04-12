@@ -12,5 +12,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6638c32f11bc43d2b999502eee19c959, type: 3}
   m_Name: BuildingStoneConfig
   m_EditorClassIdentifier: 
-  _name: Resource
-  _prefab: {fileID: 3915737833306874703, guid: 01febc069ca67c344a1f8a40ba953062, type: 3}
+  _headBuildingLevel: 4
+  _prefab: {fileID: -6047394267593081454, guid: 01febc069ca67c344a1f8a40ba953062, type: 3}

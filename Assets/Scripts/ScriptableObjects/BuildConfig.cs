@@ -6,10 +6,10 @@ namespace ScriptableObjects
     [CreateAssetMenu(fileName = "Build/ResourceBuild", menuName = "Build", order = 0)]
     public class BuildConfig : ScriptableObject
     {
-        [SerializeField] private string _name;
+        [SerializeField] private int _headBuildingLevel;
         [SerializeField] private ResourceBuildingAbstract _prefab;
         
-        public string Name => _name;
+        public int HeadBuildingLevel => _headBuildingLevel;
         public ResourceBuildingAbstract Prefab => _prefab;
     }
 }

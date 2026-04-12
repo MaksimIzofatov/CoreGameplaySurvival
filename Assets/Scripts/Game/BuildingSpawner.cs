@@ -1,6 +1,7 @@
 using System;
 using System.Collections.Generic;
 using Factory;
+using Interfaces;
 using UnityEngine;
 using Zenject;
 
@@ -26,15 +27,22 @@ namespace Game
             SpawnHeadBuilding();
         }
 
-        public void SpawnBuilding()
+        public bool SpawnBuilding()
         {
             var building = _buildingFactory.GetResourceBuildingAbstract();
+            if (building == null)
+            {
+                return false;
+            }
+            
             building.SetPosition(_spawnPoints[_currentSpawnPoint++]);
             
             if (_buildingFactory.IsLastBuilding)
             {
                 BuildingFinished?.Invoke();
             };
+            
+            return true;
         }
 
         private void SpawnHeadBuilding()

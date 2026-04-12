@@ -1,7 +1,7 @@
 using Abstracts;
 using Game;
 
-namespace Factory
+namespace Interfaces
 {
     public interface IBuildingFactory
     {
