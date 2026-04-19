@@ -8,10 +8,8 @@ namespace ScriptableObjects
     public class HeadLevelConfig : ScriptableObject
     {
         [SerializeField] private int _level;
-        [SerializeField] private List<TypeResource>  _typeResources;
-        [SerializeField] private List<double>  _countResources;
+        [SerializeField] private List<ResourceConfig>  _resources;
         public int Level => _level; 
-        public IList<TypeResource> TypeResources => _typeResources;
-        public IList<double> CountResources => _countResources;
+        public IList<ResourceConfig> Resources => _resources;
     }
 }

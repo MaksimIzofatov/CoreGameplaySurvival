@@ -1,3 +1,4 @@
+using Buildings;
 using Factory;
 using Game;
 using Interfaces;
@@ -13,7 +14,7 @@ namespace UI
         [SerializeField] private Button _levelUpButton;
         [SerializeField] private BuildingSpawner _spawner;
         
-        private HeadBuilding _headBuilding;
+        private HeadBuildingView _headBuilding;
 
         [Inject]
         private void Construct(IBuildingFactory factory)
@@ -24,14 +25,14 @@ namespace UI
         private void OnEnable()
         {
             _button.onClick.AddListener(SpawnBuilding);
-            _levelUpButton.onClick.AddListener(_headBuilding.LevelToUp);
+            _levelUpButton.onClick.AddListener(_headBuilding.HeadBuilding.LevelToUp);
             _spawner.BuildingFinished += OnBuildingFinished;
         }
 
         private void OnDisable()
         {
             _button.onClick.RemoveListener(SpawnBuilding);
-            _levelUpButton.onClick.RemoveListener(_headBuilding.LevelToUp);
+            _levelUpButton.onClick.RemoveListener(_headBuilding.HeadBuilding.LevelToUp);
             _spawner.BuildingFinished -= OnBuildingFinished;
         }
 

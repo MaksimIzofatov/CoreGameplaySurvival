@@ -18,7 +18,9 @@ namespace Data
 
         public double GetCountResource(TypeResource typeResource)
         {
-            return _globalResources.First(r => r.TypeResource == typeResource).Count;
+            var resource = _globalResources.FirstOrDefault(r => r.TypeResource == typeResource);
+            if (resource == null) return -1;
+            return resource.Count;
         }
 
         public void AddResource(TypeResource typeResource, double currentResource)
@@ -32,7 +34,7 @@ namespace Data
             }
             else
             {
-                allCount = res.AddCountResource(currentResource);
+                allCount = AddCountResource(res, currentResource);
             }
             
             
@@ -44,9 +46,23 @@ namespace Data
         {
             foreach (Resource resource in currentLevelResources)
             {
-                var allCount = _globalResources.First(r => r.TypeResource == resource.TypeResource).RemoveCountResource(resource.Count);
+                var res = _globalResources.FirstOrDefault(r => r.TypeResource == resource.TypeResource);
+                var allCount = RemoveCountResource(res, resource.Count);
                 ResourceChanged?.Invoke(resource, allCount);
             }
+        }
+        
+        
+        private double AddCountResource(Resource res, double currentResource)
+        {
+            res.Count += currentResource;
+            return res.Count;
+        }
+        
+        private double RemoveCountResource(Resource res, double currentResource)
+        {
+            res.Count -= currentResource;
+            return res.Count;
         }
     }
 }

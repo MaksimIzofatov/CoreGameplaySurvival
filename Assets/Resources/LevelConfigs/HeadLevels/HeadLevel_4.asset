@@ -13,8 +13,7 @@ MonoBehaviour:
   m_Name: HeadLevel_4
   m_EditorClassIdentifier: 
   _level: 4
-  _typeResources: 020000000000000001000000
-  _countResources:
-  - 100
-  - 70
-  - 30
+  _resources:
+  - {fileID: 11400000, guid: 0106f05159904614e82ff04a836a6054, type: 2}
+  - {fileID: 11400000, guid: 2c8053b6e3d9e1f42aacb7c01de97cbc, type: 2}
+  - {fileID: 11400000, guid: bc59fd5af336826478ce4465b67a3f28, type: 2}

@@ -9,7 +9,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7551904568303727301}
-  - component: {fileID: 80794780971117636}
+  - component: {fileID: 2373327872364817638}
   m_Layer: 0
   m_Name: ResourceBuildingMeat
   m_TagString: Untagged
@@ -35,7 +35,7 @@ Transform:
   - {fileID: 7779055451092292425}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &80794780971117636
+--- !u!114 &2373327872364817638
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -44,14 +44,13 @@ MonoBehaviour:
   m_GameObject: {fileID: 756584009379652063}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8e8b74f0e91f4337adfc8f359785f36d, type: 3}
+  m_Script: {fileID: 11500000, guid: 2e28dc6f05aa49ccbefc38bb1debd004, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _typeResource: 2
-  _currentProduction: 1
-  _currentCapacityResource: 0
-  _maxCapacityResource: 20
-  _secondToProduction: 2
+  _levelUpButton: {fileID: 2984107494809331387}
+  _levelText: {fileID: 4501871302957338338}
+  _productionButton: {fileID: 5862620946206511551}
+  _building: {fileID: 0}
 --- !u!1 &4141212206734509555
 GameObject:
   m_ObjectHideFlags: 0
@@ -201,7 +200,6 @@ GameObject:
   - component: {fileID: 1042649951572032940}
   - component: {fileID: 1852096491801758166}
   - component: {fileID: 343461988791312370}
-  - component: {fileID: 1699128944157170192}
   m_Layer: 5
   m_Name: Canvas
   m_TagString: Untagged
@@ -292,22 +290,6 @@ MonoBehaviour:
   m_BlockingMask:
     serializedVersion: 2
     m_Bits: 4294967295
---- !u!114 &1699128944157170192
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4296681495609543965}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2e28dc6f05aa49ccbefc38bb1debd004, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _levelUpButton: {fileID: 2984107494809331387}
-  _levelText: {fileID: 4501871302957338338}
-  _productionButton: {fileID: 5862620946206511551}
-  _building: {fileID: 80794780971117636}
 --- !u!1 &4790200367183940268
 GameObject:
   m_ObjectHideFlags: 0

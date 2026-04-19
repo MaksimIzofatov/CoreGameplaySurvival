@@ -13,5 +13,4 @@ MonoBehaviour:
   m_Name: HeadLevel_1
   m_EditorClassIdentifier: 
   _level: 1
-  _typeResources: 
-  _countResources: []
+  _resources: []

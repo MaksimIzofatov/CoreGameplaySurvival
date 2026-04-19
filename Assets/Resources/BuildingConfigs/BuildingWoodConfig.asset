@@ -13,4 +13,8 @@ MonoBehaviour:
   m_Name: BuildingWoodConfig
   m_EditorClassIdentifier: 
   _headBuildingLevel: 3
-  _prefab: {fileID: 1395139840266166457, guid: a984cdc0eecb0264a8071253cd2987bc, type: 3}
+  _prefab: {fileID: 8917884233039951945, guid: a984cdc0eecb0264a8071253cd2987bc, type: 3}
+  _typeResource: 0
+  _currentSpeedProduction: 1
+  _maxCapacityResource: 15
+  _secondToProduction: 3

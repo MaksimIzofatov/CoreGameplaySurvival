@@ -14,16 +14,5 @@ namespace Data
             TypeResource = typeResource;
         }
 
-        public double AddCountResource(double currentResource)
-        {
-            Count += currentResource;
-            return Count;
-        }
-        
-        public double RemoveCountResource(double currentResource)
-        {
-            Count -= currentResource;
-            return Count;
-        }
     }
 }

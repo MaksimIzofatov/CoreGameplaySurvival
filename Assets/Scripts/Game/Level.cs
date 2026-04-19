@@ -7,7 +7,7 @@ namespace Game
 {
     public class Level : ILevel
     {
-        public int CurrentLevel { get; protected set; }
+        public int CurrentLevel { get; private set; }
         public IList<Resource> Resources => _resources;
 
         private List<Resource> _resources;

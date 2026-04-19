@@ -1,4 +1,5 @@
-using Abstracts;
+using Data;
+using UI;
 using UnityEngine;
 
 namespace ScriptableObjects
@@ -7,9 +8,17 @@ namespace ScriptableObjects
     public class BuildConfig : ScriptableObject
     {
         [SerializeField] private int _headBuildingLevel;
-        [SerializeField] private ResourceBuildingAbstract _prefab;
+        [SerializeField] private ResourceBuildingView _prefab;
+        [SerializeField] private TypeResource _typeResource;
+        [SerializeField] private double _currentSpeedProduction;
+        [SerializeField] private double _maxCapacityResource;
+        [SerializeField] private float _secondToProduction;
         
         public int HeadBuildingLevel => _headBuildingLevel;
-        public ResourceBuildingAbstract Prefab => _prefab;
+        public ResourceBuildingView Prefab => _prefab;
+        public TypeResource TypeResource => _typeResource;
+        public double CurrentSpeedProduction => _currentSpeedProduction;
+        public double MaxCapacityResource => _maxCapacityResource;
+        public float SecondToProduction => _secondToProduction;
     }
 }

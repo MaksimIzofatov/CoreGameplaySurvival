@@ -13,4 +13,8 @@ MonoBehaviour:
   m_Name: BuildingStoneConfig
   m_EditorClassIdentifier: 
   _headBuildingLevel: 4
-  _prefab: {fileID: -6047394267593081454, guid: 01febc069ca67c344a1f8a40ba953062, type: 3}
+  _prefab: {fileID: 8580688745706295281, guid: 01febc069ca67c344a1f8a40ba953062, type: 3}
+  _typeResource: 1
+  _currentSpeedProduction: 1
+  _maxCapacityResource: 10
+  _secondToProduction: 5

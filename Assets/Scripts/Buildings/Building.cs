@@ -1,13 +1,12 @@
 using System;
 using Data;
-using Game;
 using Interfaces;
 using UnityEngine;
 using Zenject;
 
-namespace Abstracts
+namespace Buildings
 {
-    public abstract class BuildingAbstract : MonoBehaviour
+    public class Building 
     {
         public event Action<int> LevelUp;
         protected ResourceManager _resourceManager;
@@ -15,24 +14,25 @@ namespace Abstracts
         
         public ILevel CurrentLevel { get; private set; }
         
-        [Inject]
-        protected void Construct(ResourceManager resourceManager, ILevelFactory levelFactory)
+        
+
+        public Building(ResourceManager resourceManager, ILevelFactory levelFactory)
         {
             _resourceManager = resourceManager; 
             _levelFactory = levelFactory;
-        }
-
-        private void Awake()
-        {
             UpLevel(CurrentLevel);
-        }
+        } 
 
-        public void SetPosition(Transform spawnPoint)
+
+        public virtual void LevelToUp()
         {
-            transform.position = spawnPoint.position;
+            if (CurrentLevel.IsUpLevel())
+            {
+                UpLevel(CurrentLevel);
+            }
         }
 
-        public void UpLevel(ILevel level)
+        protected void UpLevel(ILevel level)
         {
             if(CurrentLevel != null)
                 _resourceManager.RemoveResource(CurrentLevel.Resources);
@@ -42,3 +42,4 @@ namespace Abstracts
         }
     }
 }
+

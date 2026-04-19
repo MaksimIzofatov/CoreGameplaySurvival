@@ -1,4 +1,5 @@
 using Game;
+using UI;
 using UnityEngine;
 using UnityEngine.Serialization;
 
@@ -8,9 +9,9 @@ namespace ScriptableObjects
     public class HeadBuildConfig : ScriptableObject
     {
         [SerializeField] private string _name;
-        [SerializeField] private HeadBuilding  _prefab;
+        [SerializeField] private HeadBuildingView  _prefab;
         
         public string Name => _name;
-        public HeadBuilding Prefab => _prefab;
+        public HeadBuildingView Prefab => _prefab;
     }
 }

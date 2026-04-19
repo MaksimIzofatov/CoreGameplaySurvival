@@ -13,4 +13,4 @@ MonoBehaviour:
   m_Name: HeadBuildingConfig
   m_EditorClassIdentifier: 
   _name: Head
-  _prefab: {fileID: 4854636749897865717, guid: 7ffc067075749d144b724734a3b48870, type: 3}
+  _prefab: {fileID: 2836980763742224530, guid: 7ffc067075749d144b724734a3b48870, type: 3}

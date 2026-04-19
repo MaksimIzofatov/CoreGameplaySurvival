@@ -149,7 +149,6 @@ GameObject:
   - component: {fileID: 3017327471909311680}
   - component: {fileID: 4040197935030003736}
   - component: {fileID: 7434247048824738044}
-  - component: {fileID: 1752622164931337764}
   m_Layer: 5
   m_Name: Canvas
   m_TagString: Untagged
@@ -240,20 +239,6 @@ MonoBehaviour:
   m_BlockingMask:
     serializedVersion: 2
     m_Bits: 4294967295
---- !u!114 &1752622164931337764
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7233812118865144894}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0680ddbf179d4090a57f04087415e161, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _currentLevel: {fileID: 2221693305729105520}
-  _headBuilding: {fileID: 4854636749897865717}
 --- !u!1 &9070061877104948336
 GameObject:
   m_ObjectHideFlags: 0
@@ -263,7 +248,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8226012436815438872}
-  - component: {fileID: 4854636749897865717}
+  - component: {fileID: 2836980763742224530}
   m_Layer: 0
   m_Name: HeadBulding
   m_TagString: Untagged
@@ -297,7 +282,7 @@ Transform:
   - {fileID: 196904164310869362}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &4854636749897865717
+--- !u!114 &2836980763742224530
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -306,9 +291,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 9070061877104948336}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 889f855469574e45bc760b9315ad7533, type: 3}
+  m_Script: {fileID: 11500000, guid: 0680ddbf179d4090a57f04087415e161, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _currentLevel: {fileID: 2221693305729105520}
 --- !u!1001 &697989880650433387
 PrefabInstance:
   m_ObjectHideFlags: 0

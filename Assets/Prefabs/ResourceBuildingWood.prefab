@@ -270,7 +270,6 @@ GameObject:
   - component: {fileID: 7394706190633123962}
   - component: {fileID: 2683160441042278961}
   - component: {fileID: 2271973448733731402}
-  - component: {fileID: 3393667389019838530}
   m_Layer: 5
   m_Name: Canvas
   m_TagString: Untagged
@@ -361,22 +360,6 @@ MonoBehaviour:
   m_BlockingMask:
     serializedVersion: 2
     m_Bits: 4294967295
---- !u!114 &3393667389019838530
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2189145476874302765}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2e28dc6f05aa49ccbefc38bb1debd004, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _levelUpButton: {fileID: 1713535002734093176}
-  _levelText: {fileID: 7670156620555583138}
-  _productionButton: {fileID: 8699512399183678619}
-  _building: {fileID: 1395139840266166457}
 --- !u!1 &2250219625701865869
 GameObject:
   m_ObjectHideFlags: 0
@@ -584,7 +567,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 5716103086660801383}
-  - component: {fileID: 1395139840266166457}
+  - component: {fileID: 8917884233039951945}
   m_Layer: 0
   m_Name: ResourceBuildingWood
   m_TagString: Untagged
@@ -610,7 +593,7 @@ Transform:
   - {fileID: 7401534067447603346}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1395139840266166457
+--- !u!114 &8917884233039951945
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -619,14 +602,12 @@ MonoBehaviour:
   m_GameObject: {fileID: 3216649449580406976}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8e8b74f0e91f4337adfc8f359785f36d, type: 3}
+  m_Script: {fileID: 11500000, guid: 2e28dc6f05aa49ccbefc38bb1debd004, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _typeResource: 0
-  _currentProduction: 1
-  _currentCapacityResource: 0
-  _maxCapacityResource: 15
-  _secondToProduction: 5
+  _levelUpButton: {fileID: 1713535002734093176}
+  _levelText: {fileID: 7670156620555583138}
+  _productionButton: {fileID: 8699512399183678619}
 --- !u!1 &8224427572951428217
 GameObject:
   m_ObjectHideFlags: 0

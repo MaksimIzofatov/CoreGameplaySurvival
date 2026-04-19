@@ -1,12 +1,13 @@
-using Abstracts;
+using Buildings;
 using Game;
+using UI;
 
 namespace Interfaces
 {
     public interface IBuildingFactory
     {
-        public HeadBuilding HeadBuilding { get; }
+        public HeadBuildingView HeadBuilding { get; }
         public bool IsLastBuilding { get; }
-        public ResourceBuildingAbstract GetResourceBuildingAbstract();
+        public ResourceBuildingView GetResourceBuildingAbstract();
     }
 }

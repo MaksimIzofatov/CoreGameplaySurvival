@@ -1,7 +1,6 @@
 using System.Collections.Generic;
 using System.IO;
 using System.Linq;
-using Abstracts;
 using Data;
 using Game;
 using Interfaces;
@@ -45,9 +44,9 @@ namespace Factory
             {
                 _tempResources.Clear();
 
-                for (int i = 0; i < headLevelConfig.TypeResources.Count; i++)
+                for (int i = 0; i < headLevelConfig.Resources.Count; i++)
                 {
-                    var resource = new Resource(headLevelConfig.CountResources[i], headLevelConfig.TypeResources[i]);
+                    var resource = new Resource(headLevelConfig.Resources[i].Count, headLevelConfig.Resources[i].TypeResource);
                     _tempResources.Add(resource);
                 }
 

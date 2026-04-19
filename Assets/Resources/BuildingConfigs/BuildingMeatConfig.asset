@@ -13,4 +13,8 @@ MonoBehaviour:
   m_Name: BuildingMeatConfig
   m_EditorClassIdentifier: 
   _headBuildingLevel: 2
-  _prefab: {fileID: 80794780971117636, guid: a493dfeafe21b5f42887d83510377f26, type: 3}
+  _prefab: {fileID: 2373327872364817638, guid: a493dfeafe21b5f42887d83510377f26, type: 3}
+  _typeResource: 2
+  _currentSpeedProduction: 1
+  _maxCapacityResource: 20
+  _secondToProduction: 2
